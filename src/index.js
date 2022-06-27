@@ -50,7 +50,7 @@ module.exports = function toReadable (number) {
                    }
        }
 
- else if(number<1000){
+ else if(number>100 && number<1000) {
  
                    let numberToString = number.toString() 
  
