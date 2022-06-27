@@ -6,7 +6,7 @@ module.exports = function toReadable (number) {
   let tenth = ['','',
              'twenty',
              'thirty',
-             'forty',
+             'fourty',
              'fifty',
              'sixty',
              'seventy',
