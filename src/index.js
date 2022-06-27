@@ -36,10 +36,8 @@ module.exports = function toReadable (number) {
              if(number<100){
                    let integerhPart = tenth[Math.trunc(number/10)]
                    let tenthPart = toTwenthy[Math.ceil(((number/10)-Math.trunc(number/10))*10)]
-
-                    readabl = integerhPart + '' + tenthPart
-
-                 
+                   return readabl = integerhPart + ' ' + tenthPart
+                
                }   
  
       } 
@@ -56,7 +54,7 @@ module.exports = function toReadable (number) {
                    let firstDigit = toTwenthy[+numberToString[0]];
                    let secDigit =tenth[+numberToString[1]] ;
                    let therdDigit =toTwenthy[+numberToString[2]] ;
-                    readabl =  firstDigit + ' ' + 'hundred' + ' ' + secDigit+ ' ' + therdDigit
+                   return readabl =  firstDigit + ' ' + 'hundred' + ' ' + secDigit+ ' ' + therdDigit
 
              }   
                  
