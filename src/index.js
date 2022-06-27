@@ -55,7 +55,7 @@ module.exports = function toReadable (number) {
                    let firstDigit = toTwenthy[+numberToString[0]];
                    let secDigit =tenth[+numberToString[1]] ;
                    let therdDigit =toTwenthy[+numberToString[2]] ;
-                    readabl =  firstDigit +" " + "hundred" +" "+ secDigit+ " "+ therdDigit
+                    readabl =  firstDigit +" " + 'hundred' +" "+ secDigit+ " "+ therdDigit
 
              }   
                  
