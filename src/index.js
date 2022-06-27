@@ -19,7 +19,7 @@ module.exports = function toReadable (number) {
 
  
  } 
- else if(number<20){
+ else if(number>0 && number<20){
 
     readabl =toTwenthy[number]
 
