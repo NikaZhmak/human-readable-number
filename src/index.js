@@ -26,15 +26,13 @@ module.exports = function toReadable (number) {
           }
  
  
- else if(numbe<100){
+ else if(number<100){
              if(number%10==0){
-                readabl =tenth[number/10]
-
-                 
+                readabl =tenth[number/10]                 
              }
  
        else if(number%10!==0){
-             if(number<100){
+             if(number){
                    let integerhPart = tenth[Math.trunc(number/10)]
                    let tenthPart = toTwenthy[Math.ceil(((number/10)-Math.trunc(number/10))*10)]
 
