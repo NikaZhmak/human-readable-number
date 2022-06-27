@@ -27,7 +27,7 @@ module.exports = function toReadable (number) {
           }
  
  
- else if(number>20 && number<100){
+ else if(number>19 && number<100){
              if(number%10==0){
                 readabl =tenth[number/10]                 
              }
