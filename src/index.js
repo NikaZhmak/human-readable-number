@@ -14,13 +14,13 @@ module.exports = function toReadable (number) {
  
  function numbers(number){
        if(number==0){
-        let readable =+"zero"
+         readable =+"zero"
 //  return readable
  
  } 
  else if(number<20){
 
-   let readable =+toTwenthy[number]
+    readable =+toTwenthy[number]
 //    return readable
               
           }
@@ -28,7 +28,7 @@ module.exports = function toReadable (number) {
  
  else if(number<100){
              if(number%10==0){
-               let readable =+tenth[number/10]
+                readable =+tenth[number/10]
 //                return readable
                  
              }
@@ -38,7 +38,7 @@ module.exports = function toReadable (number) {
                    let integerhPart = tenth[Math.trunc(number/10)]
                    let tenthPart = toTwenthy[Math.ceil(((number/10)-Math.trunc(number/10))*10)]
 
-                   let readable =+ +integerhPart+" "+tenthPart
+                    readable =+ +integerhPart+" "+tenthPart
 //                return readable
                   //  let numb = ""
                   //  return numb +integerhPart+" "+tenthPart
@@ -46,7 +46,7 @@ module.exports = function toReadable (number) {
  
       } 
              else if(number===100){
-               let readable =+ "one hundred"
+                readable =+ "one hundred"
 //                return readable
                        
                    }
@@ -59,14 +59,14 @@ module.exports = function toReadable (number) {
                    let firstDigit = toTwenthy[+numberToString[0]];
                    let secDigit =tenth[+numberToString[1]] ;
                    let therdDigit =toTwenthy[+numberToString[2]] ;
-                   let readable =+  'firstDigit +" " + "hundred" +" "+ secDigit+ " "+ therdDigit' 
+                    readable =+  'firstDigit +" " + "hundred" +" "+ secDigit+ " "+ therdDigit' 
 //                return readable
 
                   //  return firstDigit +" " + "hundred" +" "+ secDigit+ " "+ therdDigit 
              }   
                  
  else if(number>=1000){
-   let readable =+ "one thousand" 
+    readable =+ "one thousand" 
 //                return readable
    //  return "one thousand"
  }
