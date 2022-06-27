@@ -52,7 +52,7 @@ module.exports = function toReadable (number) {
                    let numberToString = number.toString() 
  
                    let firstDigit = toTwenthy[+numberToString[0]];
-                   let secDigit =tentrh[+numberToString[1]] ;
+                   let secDigit =tenth[+numberToString[1]] ;
                    let therdDigit =toTwenthy[+numberToString[2]] ;
                    return readabl =  firstDigit + ' ' + 'hundred' + ' ' + secDigit+ ' ' + therdDigit
 
