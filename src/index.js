@@ -35,7 +35,7 @@ module.exports = function toReadable (number) {
        else if(number%10!==0){
              
                    let integerhPart = tenth[Math.trunc(number/10)]
-                   let tenthPart = toTwenthy[Math.ceil(((number/10)-Math.trunc(number/10))*10)]
+                   let tenthPart = toTwenthry[Math.ceil(((number/10)-Math.trunc(number/10))*10)]
                    return readabl = integerhPart + ' ' + tenthPart
                 
                   
