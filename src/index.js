@@ -14,22 +14,22 @@ module.exports = function toReadable (number) {
  
  function numbers(number){
        if(number==0){
-         readable =+"zero"
-//  return readable
+         readabl ="zero"
+
  
  } 
  else if(number<20){
 
-    readable =+toTwenthy[number]
-//    return readable
+    readabl =toTwenthy[number]
+
               
           }
  
  
  else if(number<100){
              if(number%10==0){
-                readable =+tenth[number/10]
-//                return readable
+                readabl =tenth[number/10]
+
                  
              }
  
@@ -38,17 +38,15 @@ module.exports = function toReadable (number) {
                    let integerhPart = tenth[Math.trunc(number/10)]
                    let tenthPart = toTwenthy[Math.ceil(((number/10)-Math.trunc(number/10))*10)]
 
-                    readable =+ +integerhPart+" "+tenthPart
-//                return readable
-                  //  let numb = ""
-                  //  return numb +integerhPart+" "+tenthPart
+                    readabl = +integerhPart+" "+tenthPart
+
+                 
                }   
  
       } 
              else if(number===100){
-                readable =+ "one hundred"
-//                return readable
-                       
+                readabl = "one hundred"
+                     
                    }
        }
 
@@ -59,16 +57,13 @@ module.exports = function toReadable (number) {
                    let firstDigit = toTwenthy[+numberToString[0]];
                    let secDigit =tenth[+numberToString[1]] ;
                    let therdDigit =toTwenthy[+numberToString[2]] ;
-                    readable =+  'firstDigit +" " + "hundred" +" "+ secDigit+ " "+ therdDigit' 
-//                return readable
+                    readabl =  'firstDigit +" " + "hundred" +" "+ secDigit+ " "+ therdDigit' 
 
-                  //  return firstDigit +" " + "hundred" +" "+ secDigit+ " "+ therdDigit 
              }   
                  
  else if(number>=1000){
-    readable =+ "one thousand" 
-//                return readable
-   //  return "one thousand"
+    readabl = "one thousand" 
+
  }
 
  }
