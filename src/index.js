@@ -1,12 +1,12 @@
 module.exports = function toReadable (number) {
- let toTwenthy = ['zero','one','two','three','four','five','six','seven','eight','nine','','eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
+ let toTwenthy = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
   'sixteen', 'seventeen',  'eighteen', 'nineteen',]
  let readabl 
  let hundred = "one hundred"
   let tenth = ['','',
              'twenty',
              'thirty',
-             'fourty',
+             'forty',
              'fifty',
              'sixty',
              'seventy',
