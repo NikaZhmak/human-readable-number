@@ -12,7 +12,7 @@ module.exports = function toReadable (number) {
              'eighty',
              'ninety',]
  
- function numbers(number){
+
        if(number==0){
          readabl ="zero"
 
@@ -62,10 +62,7 @@ module.exports = function toReadable (number) {
              }   
                  
  else if(number>=1000){
-    readabl = "one thousand" 
-
- }
-
- }
+    readabl = "one thousand"}
+    
     return readabl
 }
