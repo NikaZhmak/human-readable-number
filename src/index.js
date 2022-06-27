@@ -42,13 +42,13 @@ module.exports = function toReadable (number) {
                }   
  
       } 
-             else if(number===100){
+             else if(number==100){
                 readabl = "one hundred"
                      
                    }
        }
 
- else if(number>100 && number<1000) {
+ else if(number>100 ) {
  
                    let numberToString = number.toString() 
  
@@ -59,7 +59,7 @@ module.exports = function toReadable (number) {
 
              }   
                  
- else if(number>=1000){
+ else if(number==1000){
     readabl = "one thousand"}
     
     return readabl
