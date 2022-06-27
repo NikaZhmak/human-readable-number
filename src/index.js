@@ -15,13 +15,13 @@ module.exports = function toReadable (number) {
  function numbers(number){
        if(number==0){
         let readable =+"zero"
-     return readable
+//  return readable
  
  } 
  else if(number<20){
 
    let readable =+toTwenthy[number]
-   return readable
+//    return readable
               
           }
  
@@ -29,7 +29,7 @@ module.exports = function toReadable (number) {
  else if(number<100){
              if(number%10==0){
                let readable =+tenth[number/10]
-               return readable
+//                return readable
                  
              }
  
@@ -39,7 +39,7 @@ module.exports = function toReadable (number) {
                    let tenthPart = toTwenthy[Math.ceil(((number/10)-Math.trunc(number/10))*10)]
 
                    let readable =+ +integerhPart+" "+tenthPart
-               return readable
+//                return readable
                   //  let numb = ""
                   //  return numb +integerhPart+" "+tenthPart
                }   
@@ -47,7 +47,7 @@ module.exports = function toReadable (number) {
       } 
              else if(number===100){
                let readable =+ "one hundred"
-               return readable
+//                return readable
                        
                    }
        }
@@ -60,14 +60,14 @@ module.exports = function toReadable (number) {
                    let secDigit =tenth[+numberToString[1]] ;
                    let therdDigit =toTwenthy[+numberToString[2]] ;
                    let readable =+  'firstDigit +" " + "hundred" +" "+ secDigit+ " "+ therdDigit' 
-               return readable
+//                return readable
 
                   //  return firstDigit +" " + "hundred" +" "+ secDigit+ " "+ therdDigit 
              }   
                  
  else if(number>=1000){
    let readable =+ "one thousand" 
-               return readable
+//                return readable
    //  return "one thousand"
  }
  return readable
