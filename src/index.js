@@ -1,7 +1,7 @@
 module.exports = function toReadable (number) {
  let toTwenthy = ['','one','two','three','four','five','six','seven','eight','nine','','eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
   'sixteen', 'seventeen',  'eighteen', 'nineteen',]
- let readable =``
+ let readabl =``
   let tenth = ['','',
              'twenty',
              'thirty',
@@ -72,5 +72,5 @@ module.exports = function toReadable (number) {
  }
 
  }
-    return readable
+    return readabl
 }
