@@ -49,6 +49,10 @@ else if(number>100){
                   let therdDigit =toTwenthy[+numberToString[2]] ;
                   return firstDigit +" " + "hundred" +" "+ secDigit+ " "+ therdDigit 
             }   
-    
+                }
+else if(number==1000){
+   return "one thousand"
 }
+}
+    
 }
