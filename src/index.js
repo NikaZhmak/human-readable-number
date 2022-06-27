@@ -2,6 +2,7 @@ module.exports = function toReadable (number) {
  let toTwenthy = ['zero','one','two','three','four','five','six','seven','eight','nine','','eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
   'sixteen', 'seventeen',  'eighteen', 'nineteen',]
  let readabl 
+ let hundred = "one hundred"
   let tenth = ['','',
              'twenty',
              'thirty',
@@ -43,7 +44,7 @@ module.exports = function toReadable (number) {
  
       } 
              else if(number==100){
-                readabl = "one hundred"
+                readabl = hundred
                      
                    }
        }
@@ -59,8 +60,6 @@ module.exports = function toReadable (number) {
 
              }   
                  
- else if(number==1000){
-    readabl = "one thousand"}
     
     return readabl
 }
