@@ -1,5 +1,5 @@
 module.exports = function toReadable (number) {
- let toTwenthy = ['','one','two','three','four','five','six','seven','eight','nine','','eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
+ let toTwenthy = ['zero','one','two','three','four','five','six','seven','eight','nine','','eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
   'sixteen', 'seventeen',  'eighteen', 'nineteen',]
  let readabl 
   let tenth = ['','',
@@ -14,7 +14,7 @@ module.exports = function toReadable (number) {
  
 
        if(number==0){
-         readabl = "zero"
+         readabl = toTwenthy[0]
 
  
  } 
@@ -36,7 +36,7 @@ module.exports = function toReadable (number) {
                    let integerhPart = tenth[Math.trunc(number/10)]
                    let tenthPart = toTwenthy[Math.ceil(((number/10)-Math.trunc(number/10))*10)]
 
-                    readabl = +integerhPart+ " " +tenthPart
+                    readabl = integerhPart+ " " +tenthPart
 
                  
                }   
